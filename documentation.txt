@@ -1,0 +1,66 @@
+############# Funciones de interés ################################
+
+tkinter.filedialog.askopenfile(mode='r', **options)
+mode='r' significa modo de lectura de archivos
+**options tipo de archivos
+
+Image.resize(size, resample=0)
+size – The requested size in pixels, as a 2-tuple: (width, height).
+resample – An optional resampling filter. This can be one of 
+PIL.Image.NEAREST (use nearest neighbour), 
+PIL.Image.BILINEAR (linear interpolation), 
+PIL.Image.BICUBIC (cubic spline interpolation), or 
+PIL.Image.LANCZOS (a high-quality downsampling filter). 
+If omitted, or if the image has mode “1” or “P”, it is set PIL.Image.NEAREST. 
+Otherwise, the default filter is Resampling.BICUBIC. 
+
+Image.filter()
+BLUR
+CONTOUR
+DETAIL
+EDGE_ENHANCE
+EDGE_ENHANCE_MORE
+EMBOSS
+FIND_EDGES
+SHARPEN
+SMOOTH
+SMOOTH_MORE
+
+
+###################### Documentación de las librerías ##########################
+
+pillow: https://pillow.readthedocs.io/en/stable/
+tkinter: https://docs.python.org/3/library/tk.html
+rembg: https://pypi.org/project/rembg/2.0.28/
+
+
+####################### modelos usado por rembg ##################################
+
+u2net: A pre-trained model for general use cases.
+u2netp: A lightweight version of u2net model.
+u2net_human_seg: A pre-trained model for human segmentation.
+u2net_cloth_seg: A pre-trained model for Cloths Parsing from human portrait. Here clothes are parsed into 3 category: Upper body, Lower body and Full body.
+
+
+###################### Dificultades encontradas ###################################
+
+Instalación de librerías y adecuación del entorno en visual studio
+Actualización del pip
+pip install Pillow
+pip install rembg
+Configuración de variables de entorno de windows %path%
+
+Segmentación del cabello y de huecos
+mejorar los bordes para mejores resultados, consultar rembg documentación
+alpha matting
+
+multiples objetos
+
+
+########################## por implementar ##########################################
+
+Guardar la imagen
+botón para desenfoque gaussiano variables
+crear .exe del programa
+estilizar
+
